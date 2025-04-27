@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+body,
+.center,
+.footer > :nth-child(2) > div,
+.footer > :nth-child(1) div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 95%;
+  height: 95%;
+}
+
+.header {
+  color: white;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+.header > :nth-child(1) > img {
+  width: 40px;
+  height: 40px;
+}
+/* .slider {
+} */
+.money {
+  justify-content: end;
+  align-items: center;
+}
+.money > div {
+  margin-left: 10px;
+}
+.money > div:first-child {
+  margin-left: 0;
+}
+.money > :nth-child(-n + 2) {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 100px;
+  padding: 1px 0 1px 3px;
+  font-size: 1rem;
+}
+.money > :nth-child(-n + 2) img {
+  width: 20px;
+  height: 20px;
+}
+.money > :nth-child(-n + 2) span {
+  margin: 0 5px;
+}
+.money > :nth-child(-n + 2) div {
+  width: 20px;
+  height: 20px;
+}
+.money > :nth-child(3) {
+  height: 30px;
+  width: 30px;
+}
+.moneyBtn {
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.main {
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  align-items: end;
+  justify-content: space-between;
+}
+.footer > :nth-child(1) div,
+.footer > :nth-child(2) > div {
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+  font-weight: bold;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 100px;
+}
+.footer > :nth-child(2) > div {
+  margin-right: 0;
+  height: 50px;
+  width: 175px;
+  flex-direction: column;
+}
+.footer > :nth-child(2) div img {
+  width: 20px;
+  height: 20px;
+}
+.footer > :nth-child(2) > div > div {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    transform: rotate(90deg);
+    height: 95vw;
+    width: 95vh;
+    position: absolute;
+  }
+  .footer > :nth-child(2) > div {
+    height: auto;
+    width: 120px;
+  }
+}
